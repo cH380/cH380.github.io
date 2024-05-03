@@ -1,0 +1,1 @@
+import{_ as s,c as a,o as i,aP as n}from"./chunks/framework.CnRlB8-X.js";const y=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"content/js/j1.md","filePath":"content/js/j1.md"}'),l={name:"content/js/j1.md"},p=n("",36),e=[p];function h(k,t,r,E,d,c){return i(),a("div",null,e)}const b=s(l,[["render",h]]);export{y as __pageData,b as default};
