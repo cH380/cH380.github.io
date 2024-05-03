@@ -1,1 +1,0 @@
-import{_ as s,o as n,c as a,a as l}from"./app.4fcf0c28.js";const i=JSON.parse('{"title":"选择器","description":"","frontmatter":{},"headers":[],"relativePath":"content/css/选择器.md"}'),p={name:"content/css/选择器.md"},o=l("",5),e=[o];function t(c,r,D,y,F,C){return n(),a("div",null,e)}const d=s(p,[["render",t]]);export{i as __pageData,d as default};
