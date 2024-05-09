@@ -1,0 +1,1 @@
+import{_ as e,c as t,o as n}from"./chunks/framework.CnRlB8-X.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"content/nodejs/nodejs.md","filePath":"content/nodejs/nodejs.md"}'),o={name:"content/nodejs/nodejs.md"};function s(a,c,r,d,p,_){return n(),t("div")}const f=e(o,[["render",s]]);export{m as __pageData,f as default};
