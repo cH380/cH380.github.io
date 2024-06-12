@@ -23,11 +23,11 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="前言什么是nodejs在nodejs官网上的描述是一个免费的、开源的、跨平台的 JavaScript 运行时 允许开发人员创建服务器、Web 应用程序、 命令行工具和脚本。基于Chrome V8引擎的JavaScript运行环境，使用了一个事件驱动、非阻塞式I&#x2F;O模型，让JavaScript 运行在服务端的开发平台。 nodejs的用途通过查阅资源，总结出nodejs的用途如下 1234">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://e4ebh5yc27.feishu.cn/space/api/box/stream/download/asynccode/?code=MmU0ZmJiZmMwNGQ3YmZjZDI3ZjAxNWU3YmMxMDY5NWVfdzJqeVY1V25jcXdXYm4zdUZwOUFtcWU1bUtYd2dxMEhfVG9rZW46Q0FjOGJXWHJ2b2g1S0F4c3ZqMGM2OUVrbnJiXzE3MTgxNjQxMzM6MTcxODE2NzczM19WNA">
+<meta property="og:image" content="https://pic.imgdb.cn/item/66695177d9c307b7e9641f04.png">
 <meta property="article:published_time" content="2024-06-09T10:09:03.208Z">
-<meta property="article:modified_time" content="2024-06-12T03:48:58.254Z">
+<meta property="article:modified_time" content="2024-06-12T08:43:04.162Z">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://e4ebh5yc27.feishu.cn/space/api/box/stream/download/asynccode/?code=MmU0ZmJiZmMwNGQ3YmZjZDI3ZjAxNWU3YmMxMDY5NWVfdzJqeVY1V25jcXdXYm4zdUZwOUFtcWU1bUtYd2dxMEhfVG9rZW46Q0FjOGJXWHJ2b2g1S0F4c3ZqMGM2OUVrbnJiXzE3MTgxNjQxMzM6MTcxODE2NzczM19WNA">
+<meta name="twitter:image" content="https://pic.imgdb.cn/item/66695177d9c307b7e9641f04.png">
   
   
   
@@ -231,7 +231,7 @@
         
         
         
-          95 分钟
+          96 分钟
         
       </span>
     
@@ -311,12 +311,8 @@
 <h2 id="fs模块"><a href="#fs模块" class="headerlink" title="fs模块"></a>fs模块</h2><p>fs是文件系统的缩写，用于文件系统的增删改查，fs是node的内置模块无需安装，可直接引入使用</p>
 <h3 id="文件写入"><a href="#文件写入" class="headerlink" title="文件写入"></a>文件写入</h3><p>文件写入有同步写入、异步写入、追加写入、流式写入</p>
 <p>相关语法如下：</p>
-<p>异步写入  fs.writeFile(path, data[, options], callback)</p>
-<p>同步写入  fs.writeFileSync (path, data[, options])</p>
-<p>异步追加 fs.appendFile(path, data[, options], callback)</p>
-<p>同步追加 fs.appendFileSync(path, data[, options])</p>
-<p>流式写入 fs.createWriteStream(path,[, options])</p>
-<p>语法：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs JavaScript">异步写入  fs.<span class="hljs-title function_">writeFile</span>(path, data[, options], callback)<br>同步写入  fs.<span class="hljs-property">writeFileSync</span> (path, data[, options])<br><br>异步追加 fs.<span class="hljs-title function_">appendFile</span>(path, data[, options], callback)<br>同步追加 fs.<span class="hljs-title function_">appendFileSync</span>(path, data[, options])<br><br>流式写入 fs.<span class="hljs-title function_">createWriteStream</span>(path,[, options])<br></code></pre></td></tr></table></figure>
+
 <p>参数说明：</p>
 <p>path 文件名的路径</p>
 <p>data 待写入的数据</p>
@@ -332,9 +328,10 @@
 
 <p>  程序打开文件是会消耗资源的，使用流式写入可以减少文件打开关闭的次数，流式写入（createWriteStream）适合大文件的持续写入，writeFile 适合于 写入频率较低的场景</p>
 <h3 id="文件读取"><a href="#文件读取" class="headerlink" title="文件读取"></a>文件读取</h3><p>文件读取顾名思义，就是通过程序从文件中取出其中的数据，我们可以使用如下几种方式：</p>
-<p>异步读取：fs.readFile(path[, options], callback)</p>
-<p>同步读取：fs.readFileSync(path[, options])</p>
-<p>流式读取：fs.createReadStream(path[, options])</p>
+<p>语法</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs JavaScript">异步读取：fs.<span class="hljs-title function_">readFile</span>(path[, options], callback)<br>同步读取：fs.<span class="hljs-title function_">readFileSync</span>(path[, options])<br>流式读取：fs.<span class="hljs-title function_">createReadStream</span>(path[, options])<br></code></pre></td></tr></table></figure>
+
+<p>参数</p>
 <p>path: 文件路径 </p>
 <p>options: 选项配置 </p>
 <p>callback: 回调函数</p>
@@ -343,8 +340,8 @@
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><code class="hljs JavaScript"><span class="hljs-keyword">const</span> fs = <span class="hljs-built_in">require</span>(<span class="hljs-string">&#x27;fs&#x27;</span>)<br><br><span class="hljs-comment">/* 异步读取 */</span> <br>fs.<span class="hljs-title function_">readFile</span>(<span class="hljs-string">&#x27;./西游记.txt&#x27;</span>, <span class="hljs-function">(<span class="hljs-params">err, data</span>) =&gt;</span> &#123; <br>    <span class="hljs-keyword">if</span>(err) <span class="hljs-keyword">throw</span> err;<br>    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(data);<br>&#125;);<br> <br> <span class="hljs-comment">// 指定为utf-8</span><br>fs.<span class="hljs-title function_">readFile</span>(<span class="hljs-string">&#x27;./西游记.txt&#x27;</span>, <span class="hljs-string">&#x27;utf-8&#x27;</span>,<span class="hljs-function">(<span class="hljs-params">err, data</span>) =&gt;</span> &#123; <br>    <span class="hljs-keyword">if</span>(err) <span class="hljs-keyword">throw</span> err;<br>    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(data);<br>&#125;);<br><br><br><span class="hljs-comment">/* 同步读取 */</span><br><span class="hljs-keyword">let</span> data = fs.<span class="hljs-title function_">readFileSync</span>(<span class="hljs-string">&#x27;./西游记.txt&#x27;</span>);<br><span class="hljs-keyword">let</span> data2 = fs.<span class="hljs-title function_">readFileSync</span>(<span class="hljs-string">&#x27;./西游记.txt&#x27;</span>, <span class="hljs-string">&#x27;utf-8&#x27;</span>);<br><br><br><span class="hljs-comment">/* 流式读取 */</span><br><span class="hljs-comment">//创建读取流对象</span><br><span class="hljs-keyword">let</span> rs = fs.<span class="hljs-title function_">createReadStream</span>(<span class="hljs-string">&#x27;./西游记.txt&#x27;</span>);<br><span class="hljs-comment">//每次取出 64k 数据后执行一次 data 回调</span><br>rs.<span class="hljs-title function_">on</span>(<span class="hljs-string">&#x27;data&#x27;</span>, <span class="hljs-function"><span class="hljs-params">data</span> =&gt;</span> &#123;<br>    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(data); <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(data.<span class="hljs-property">length</span>);<br>&#125;);<br><span class="hljs-comment">//读取完毕后, 执行 end 回调</span><br>rs.<span class="hljs-title function_">on</span>(<span class="hljs-string">&#x27;end&#x27;</span>, <span class="hljs-function">() =&gt;</span> &#123; <br>    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">&#x27;读取完成&#x27;</span>)<br>&#125;)<br></code></pre></td></tr></table></figure>
 
 <h3 id="文件移动与重命名"><a href="#文件移动与重命名" class="headerlink" title="文件移动与重命名"></a>文件移动与重命名</h3><p>语法：</p>
-<p>异步同命：名 fs.rename(oldPath, newPath, callback)</p>
-<p>异步同命：fs.renameSync(oldPath, newPath)</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs JavaScript">异步同命：名 fs.<span class="hljs-title function_">rename</span>(oldPath, newPath, callback)<br>异步同命：fs.<span class="hljs-title function_">renameSync</span>(oldPath, newPath)<br></code></pre></td></tr></table></figure>
+
 <p>参数说明：</p>
 <p>oldPath 文件当前的路径 </p>
 <p>newPath 文件新的路径 </p>
@@ -354,8 +351,8 @@
 
 <h3 id="文件删除"><a href="#文件删除" class="headerlink" title="文件删除"></a>文件删除</h3><p>在 Node.js 中，我们可以使用unlink或unlinkSync来删除文件</p>
 <p>语法：</p>
-<p>fs.unlink(path, callback)</p>
-<p>fs.unlinkSync(path)</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs JavaScript">fs.<span class="hljs-title function_">unlink</span>(path, callback)<br>fs.<span class="hljs-title function_">unlinkSync</span>(path)<br></code></pre></td></tr></table></figure>
+
 <p>参数说明：</p>
 <p>path        文件路径</p>
 <p>callback  操作后的回调</p>
@@ -364,8 +361,8 @@
 
 <h3 id="创建文件夹"><a href="#创建文件夹" class="headerlink" title="创建文件夹"></a>创建文件夹</h3><p>在node.js中，我们可以使用mkdir或者mkdirSync来创建文件夹</p>
 <p>语法：</p>
-<p>fs.mkdir(path[, options], callback)</p>
-<p>fs.mkdirSync(path[, options])</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs JavaScript">fs.<span class="hljs-title function_">mkdir</span>(path[, options], callback)<br>fs.<span class="hljs-title function_">mkdirSync</span>(path[, options])<br></code></pre></td></tr></table></figure>
+
 <p>参数说明：</p>
 <p>path        文件夹路径</p>
 <p>options 选项配置（ 可选 ）</p>
@@ -375,8 +372,8 @@
 
 <h3 id="读取文件夹"><a href="#读取文件夹" class="headerlink" title="读取文件夹"></a>读取文件夹</h3><p>在Node.js中我们可以使用readdir 或者readdirSync 来读取文件夹</p>
 <p>语法：</p>
-<p>fs.readdir(path[, options], callback)</p>
-<p>fs.readdirSync(path[, options])</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs JavaScript">fs.<span class="hljs-title function_">readdir</span>(path[, options], callback)<br>fs.<span class="hljs-title function_">readdirSync</span>(path[, options])<br></code></pre></td></tr></table></figure>
+
 <p>参数说明：</p>
 <p>path        文件夹路径</p>
 <p>options    选项配置（ 可选 ）</p>
@@ -386,8 +383,8 @@
 
 <h3 id="删除文件夹"><a href="#删除文件夹" class="headerlink" title="删除文件夹"></a>删除文件夹</h3><p>在Node.js中我们可以使用rmdir或者rmdirSync来删除文件夹</p>
 <p>语法：</p>
-<p>fs.rmdir(path[, options], callback)</p>
-<p>fs.rmdirSync(path[, options])</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs JavaScript">fs.<span class="hljs-title function_">rmdir</span>(path[, options], callback)<br>fs.<span class="hljs-title function_">rmdirSync</span>(path[, options])<br></code></pre></td></tr></table></figure>
+
 <p>参数说明：</p>
 <p>path        文件夹路径</p>
 <p>options    选项配置（ 可选 ）</p>
@@ -396,8 +393,8 @@
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><code class="hljs JavaScript"><span class="hljs-keyword">const</span> fs = <span class="hljs-built_in">require</span>(<span class="hljs-string">&#x27;fs&#x27;</span>)<br><br><span class="hljs-comment">//异步删除文件夹 </span><br>fs.<span class="hljs-title function_">rmdir</span>(<span class="hljs-string">&#x27;./page&#x27;</span>, <span class="hljs-function"><span class="hljs-params">err</span> =&gt;</span> &#123;<br>    <span class="hljs-keyword">if</span>(err) <span class="hljs-keyword">throw</span> err; <br>    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">&#x27;删除成功&#x27;</span>);<br>&#125;);<br><br><span class="hljs-comment">//异步递归删除文件夹</span><br>fs.<span class="hljs-title function_">rmdir</span>(<span class="hljs-string">&#x27;./1&#x27;</span>, &#123;<span class="hljs-attr">recursive</span>: <span class="hljs-literal">true</span>&#125;, <span class="hljs-function"><span class="hljs-params">err</span> =&gt;</span> &#123; <br>    <span class="hljs-keyword">if</span>(err) <span class="hljs-keyword">throw</span> err; <br>    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">&#x27;递归删除&#x27;</span>)<br>&#125;);<br><br><span class="hljs-comment">//同步递归删除文件夹</span><br>fs.<span class="hljs-title function_">rmdirSync</span>(<span class="hljs-string">&#x27;./x&#x27;</span>, &#123;<span class="hljs-attr">recursive</span>: <span class="hljs-literal">true</span>&#125;)<br></code></pre></td></tr></table></figure>
 
 <h3 id="查看资源状态"><a href="#查看资源状态" class="headerlink" title="查看资源状态"></a>查看资源状态</h3><p>语法：</p>
-<p>fs.stat(path[, options], callback)</p>
-<p>fs.statSync(path[, options])</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs JavaScript">fs.<span class="hljs-title function_">stat</span>(path[, options], callback)<br>fs.<span class="hljs-title function_">statSync</span>(path[, options])<br></code></pre></td></tr></table></figure>
+
 <p>参数说明：</p>
 <p>path        文件夹路径</p>
 <p>options    选项配置（ 可选 ）</p>
@@ -411,13 +408,13 @@
 <p>mtime      最后修改时间 </p>
 <p>isFile        检测是否为文件</p>
 <p>isDirectory 检测是否为文件夹</p>
-<h3 id="dirname"><a href="#dirname" class="headerlink" title="dirname"></a>dirname</h3><p>__dirname 是Node.js中的全局变量，保存着 当前文件所在目录的绝对路径，可以使用   dirname 与文件名拼接成绝对路径</p>
+<h2 id="dirname"><a href="#dirname" class="headerlink" title="dirname"></a>dirname</h2><p>__dirname 是Node.js中的全局变量，保存着 当前文件所在目录的绝对路径，可以使用   dirname 与文件名拼接成绝对路径</p>
 <p>示例</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs JavaScript"><span class="hljs-keyword">const</span> fs = <span class="hljs-built_in">require</span>(<span class="hljs-string">&#x27;fs&#x27;</span>)<br><span class="hljs-comment">// 获取当前文件的绝对路径</span><br><span class="hljs-keyword">let</span> data = fs.<span class="hljs-title function_">readFileSync</span>(  dirname + <span class="hljs-string">&#x27;/data.txt&#x27;</span>); <br><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(data);<br></code></pre></td></tr></table></figure>
 
 <p>提示：</p>
 <p>使用 fs 模块的时候，尽量使用   dirname 将路径转化为绝对路径，这样可以避免相对路径产生的Bug</p>
-<h3 id="path模块"><a href="#path模块" class="headerlink" title="path模块"></a>path模块</h3><p>path提供了操作路径的功能，下面列举几个常用的api</p>
+<h2 id="path模块"><a href="#path模块" class="headerlink" title="path模块"></a>path模块</h2><p>path提供了操作路径的功能，下面列举几个常用的api</p>
 <table>
 <thead>
 <tr>
@@ -673,7 +670,7 @@
 <li>集合（collection） 集合类似于 JS 中的数组，在集合中可以存放很多文档</li>
 <li>文档（document） 文档是数据库中的最小单位，类似于 JS 中的对象</li>
 </ul>
-<p><img src="https://e4ebh5yc27.feishu.cn/space/api/box/stream/download/asynccode/?code=MmU0ZmJiZmMwNGQ3YmZjZDI3ZjAxNWU3YmMxMDY5NWVfdzJqeVY1V25jcXdXYm4zdUZwOUFtcWU1bUtYd2dxMEhfVG9rZW46Q0FjOGJXWHJ2b2g1S0F4c3ZqMGM2OUVrbnJiXzE3MTgxNjQxMzM6MTcxODE2NzczM19WNA" srcset="/img/loading.gif" lazyload alt="img"></p>
+<p><img src="https://pic.imgdb.cn/item/66695177d9c307b7e9641f04.png" srcset="/img/loading.gif" lazyload></p>
 <h2 id="下载注意事项"><a href="#下载注意事项" class="headerlink" title="下载注意事项"></a>下载注意事项</h2><ul>
 <li>在MongoDB6之前，我们配置完环境变量后，可以直接通过终端输入”mongo”进入Mongoshell， 但MongoDB6没有mong.exe和mongdb.exe，终端输入”mongo”会报错：’mongo’ 不是内部或外部命令， 也不是可运行的程序或批处理文件。要想通过命令行启动mongoDB需要自己下载一个Mongoshell， 下载及使用相当简单。</li>
 </ul>
@@ -827,7 +824,7 @@
 <p>接口地址（URL）请求参数</p>
 <p>响应结果</p>
 <p>一个接口示例 <strong><a target="_blank" rel="noopener" href="https://www.free-api.com/doc/325">https://www.free-api.com/doc/325</a></strong></p>
-<h2 id="RESTful-API"><a href="#RESTful-API" class="headerlink" title="RESTful API"></a><strong>RESTful</strong> <strong>API</strong></h2><p>RESTful API 是一种特殊风格的接口，主要特点有如下几个：</p>
+<h2 id="RESTful-API"><a href="#RESTful-API" class="headerlink" title="RESTful API"></a><strong>RESTful API</strong></h2><p>RESTful API 是一种特殊风格的接口，主要特点有如下几个：</p>
 <ul>
 <li>URL 中的路径表示 资源 ，路径中不能有 动词 ，create , delete , update</li>
 <li>例如操作资源要与 HTTP 请求方法 对应</li>
@@ -885,10 +882,10 @@
 <p><strong>安装</strong></p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs JavaScript">npm i -g json-server<br></code></pre></td></tr></table></figure>
 
-<p><strong>创建</strong> <strong>JSON</strong> <strong>文件（db.json），编写基本结构</strong></p>
+<p><strong>创建 JSON 文件（db.json），编写基本结构</strong></p>
 <figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs JSON"><span class="hljs-punctuation">&#123;</span><br>    <span class="hljs-attr">&quot;song&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span><br>        <span class="hljs-punctuation">&#123;</span> <span class="hljs-attr">&quot;id&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-number">1</span><span class="hljs-punctuation">,</span> <span class="hljs-attr">&quot;name&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;干杯&quot;</span><span class="hljs-punctuation">,</span> <span class="hljs-attr">&quot;singer&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;五月天&quot;</span> <span class="hljs-punctuation">&#125;</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-punctuation">&#123;</span> <span class="hljs-attr">&quot;id&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-number">2</span><span class="hljs-punctuation">,</span> <span class="hljs-attr">&quot;name&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;当&quot;</span><span class="hljs-punctuation">,</span> <span class="hljs-attr">&quot;singer&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;动力火车&quot;</span> <span class="hljs-punctuation">&#125;</span><span class="hljs-punctuation">,</span><br>        <span class="hljs-punctuation">&#123;</span> <span class="hljs-attr">&quot;id&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-number">3</span><span class="hljs-punctuation">,</span> <span class="hljs-attr">&quot;name&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;不能说的秘密&quot;</span><span class="hljs-punctuation">,</span> <span class="hljs-attr">&quot;singer&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;周杰伦&quot;</span> <span class="hljs-punctuation">&#125;</span><br>    <span class="hljs-punctuation">]</span><br><span class="hljs-punctuation">&#125;</span><br></code></pre></td></tr></table></figure>
 
-<p><strong>以</strong> <strong>JSON</strong> <strong>文件所在文件夹作为工作目录</strong> <strong>，执行如下命令</strong></p>
+<p><strong>以 JSON 文件所在文件夹作为工作目录</strong> <strong>，执行如下命令</strong></p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs JavaScript">json-server --watch db.<span class="hljs-property">json</span><br></code></pre></td></tr></table></figure>
 
 <h2 id="接口测试工具"><a href="#接口测试工具" class="headerlink" title="接口测试工具"></a>接口测试工具</h2><p>apipost ： <strong><a target="_blank" rel="noopener" href="https://www.apipost.cn/">https://www.apipost.cn/</a></strong> (中文)</p>
