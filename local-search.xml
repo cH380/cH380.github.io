@@ -97,7 +97,7 @@
     <link href="/2024/06/09/content/function/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/"/>
     <url>/2024/06/09/content/function/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/</url>
     
-    <content type="html"><![CDATA[<p><img src="https://pic.imgdb.cn/item/64199f8ba682492fcca40bae.jpg"></p><p><a href="https://www.67tool.com/?from=itab.link">即时工具</a></p><p><a href="https://www.yeyulingfeng.com/tool/">夜雨聆风工具箱</a></p><p><a href="https://www.aliyundrive.com/drive">阿里云盘</a></p><p><a href="https://www.wotianna.com/tag/gxlrj/">高效率软件</a></p><p><a href="https://www.bookmarkearth.com/">书签地球</a></p><p><a href="http://www.eryi.org/searchsites/cili-search.html">磁力搜索引擎神器大全</a></p><p><a href="https://chrome.zzzmh.cn/#/index">极简插件_Chrome 扩展插件</a></p><p><a href="https://www.superbed.cn/help#item=10">聚合图床 - 免费无限图片上传 </a></p><p><a href="https://www.speedtest.cn/?from=itab">测速网 - 专业测网速</a></p><p><a href="https://docs.qq.com/">腾讯文档-支持多人在线编辑</a></p>]]></content>
+    <content type="html"><![CDATA[<h1 id="前端网站"><a href="#前端网站" class="headerlink" title="前端网站"></a>前端网站</h1><p><img src="https://pic.imgdb.cn/item/6419aca7a682492fccbe88ec.jpg"></p><h2 id="vue-生态"><a href="#vue-生态" class="headerlink" title="vue 生态"></a>vue 生态</h2><p><a href="https://cn.vuejs.org/">Vue3</a></p><p><a href="https://router.vuejs.org/zh/">Vue Router</a></p><p><a href="https://pinia.vuejs.org/zh/">Pinia</a></p><p><a href="https://vuex.vuejs.org/zh/">Vuex </a></p><p><a href="https://cn.vitejs.dev/">Vite | 下一代的前端工具链</a></p><p><a href="https://webpack.docschina.org/concepts/"> webpack5 </a></p><p><a href="https://vitepress.vuejs.org/">VitePress</a></p><p><a href="https://vuepress.vuejs.org/zh/">VuePress </a></p><p><a href="https://vitejs.cn/vitepress/">VitePress 中文网 (vitejs.cn)</a></p><h2 id="开源工具"><a href="#开源工具" class="headerlink" title="开源工具"></a>开源工具</h2><p><a href="https://element-plus.gitee.io/zh-CN/">Element Plus</a></p><p><a href="https://echarts.apache.org/zh/index.html">ECharts</a></p><p><a href="https://tdesign.tencent.com/">TDesign - 开源的企业级设计体系</a></p><p><a href="https://www.bootcdn.cn/">BootCDN - CDN 加速服务</a></p><p><a href="https://gitee.com/">码云 - gitee</a></p><p><a href="https://github.com/">GitHub</a></p><h2 id="技术社区和分享文档"><a href="#技术社区和分享文档" class="headerlink" title="技术社区和分享文档"></a>技术社区和分享文档</h2><p><a href="https://juejin.cn/">稀土掘金</a></p><p><a href="https://e4ebh5yc27.feishu.cn/drive/home/">飞书云文档 </a></p><p><a href="https://www.makeapie.cn/echarts">echarts 图表可视化案例</a></p><p><a href="https://www.isqqw.com/">ECharts 图表集</a></p><p><a href="https://lhammer.cn/You-need-to-know-css/#/zh-cn/">CSS Tricks - css 动画案例</a></p><p><a href="http://chartsdev.com/">数据可视化技术分享</a></p><p><a href="http://www.jimmyxuexue.top:999/">前端加油站-个人博客</a></p><p><a href="http://vue.tuokecat.com/blog/">Home | aehyok- 个人博客</a></p><h2 id="教程"><a href="#教程" class="headerlink" title="教程"></a>教程</h2><p><a href="https://es6.ruanyifeng.com/">ES6 入门教程 </a></p><p><a href="http://www.webgl3d.cn/Three.js/">Three.js 教程 </a></p><p><a href="http://www.wjceo.com/blog/threejs/">threejs | 中文案例网</a></p><p><a href="https://interview2.poetries.top/">前端进阶之旅 </a></p><p><a href="https://typescript.bootcss.com/">TypeScript 中文手册 </a></p><h1 id="工具"><a href="#工具" class="headerlink" title="工具"></a>工具</h1><p><img src="https://pic.imgdb.cn/item/64199f8ba682492fcca40bae.jpg"></p><p><a href="https://www.67tool.com/?from=itab.link">即时工具</a></p><p><a href="https://www.yeyulingfeng.com/tool/">夜雨聆风工具箱</a></p><p><a href="https://www.aliyundrive.com/drive">阿里云盘</a></p><p><a href="https://www.wotianna.com/tag/gxlrj/">高效率软件</a></p><p><a href="https://www.bookmarkearth.com/">书签地球</a></p><p><a href="http://www.eryi.org/searchsites/cili-search.html">磁力搜索引擎神器大全</a></p><p><a href="https://chrome.zzzmh.cn/#/index">极简插件_Chrome 扩展插件</a></p><p><a href="https://www.superbed.cn/help#item=10">聚合图床 - 免费无限图片上传 </a></p><p><a href="https://www.speedtest.cn/?from=itab">测速网 - 专业测网速</a></p><p><a href="https://docs.qq.com/">腾讯文档-支持多人在线编辑</a></p>]]></content>
     
     
     <categories>
@@ -141,25 +141,6 @@
     <categories>
       
       <category>css</category>
-      
-    </categories>
-    
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>前端网站</title>
-    <link href="/2024/06/09/content/function/test/"/>
-    <url>/2024/06/09/content/function/test/</url>
-    
-    <content type="html"><![CDATA[<p><img src="https://pic.imgdb.cn/item/6419aca7a682492fccbe88ec.jpg"></p><h2 id="vue-生态"><a href="#vue-生态" class="headerlink" title="vue 生态"></a>vue 生态</h2><p><a href="https://cn.vuejs.org/">Vue3</a></p><p><a href="https://router.vuejs.org/zh/">Vue Router</a></p><p><a href="https://pinia.vuejs.org/zh/">Pinia</a></p><p><a href="https://vuex.vuejs.org/zh/">Vuex </a></p><p><a href="https://cn.vitejs.dev/">Vite | 下一代的前端工具链</a></p><p><a href="https://webpack.docschina.org/concepts/"> webpack5 </a></p><p><a href="https://vitepress.vuejs.org/">VitePress</a></p><p><a href="https://vuepress.vuejs.org/zh/">VuePress </a></p><p><a href="https://vitejs.cn/vitepress/">VitePress 中文网 (vitejs.cn)</a></p><h2 id="开源工具"><a href="#开源工具" class="headerlink" title="开源工具"></a>开源工具</h2><p><a href="https://element-plus.gitee.io/zh-CN/">Element Plus</a></p><p><a href="https://echarts.apache.org/zh/index.html">ECharts</a></p><p><a href="https://tdesign.tencent.com/">TDesign - 开源的企业级设计体系</a></p><p><a href="https://www.bootcdn.cn/">BootCDN - CDN 加速服务</a></p><p><a href="https://gitee.com/">码云 - gitee</a></p><p><a href="https://github.com/">GitHub</a></p><h2 id="技术社区和分享文档"><a href="#技术社区和分享文档" class="headerlink" title="技术社区和分享文档"></a>技术社区和分享文档</h2><p><a href="https://juejin.cn/">稀土掘金</a></p><p><a href="https://e4ebh5yc27.feishu.cn/drive/home/">飞书云文档 </a></p><p><a href="https://www.makeapie.cn/echarts">echarts 图表可视化案例</a></p><p><a href="https://www.isqqw.com/">ECharts 图表集</a></p><p><a href="https://lhammer.cn/You-need-to-know-css/#/zh-cn/">CSS Tricks - css 动画案例</a></p><p><a href="http://chartsdev.com/">数据可视化技术分享</a></p><p><a href="http://www.jimmyxuexue.top:999/">前端加油站-个人博客</a></p><p><a href="http://vue.tuokecat.com/blog/">Home | aehyok- 个人博客</a></p><h2 id="教程"><a href="#教程" class="headerlink" title="教程"></a>教程</h2><p><a href="https://es6.ruanyifeng.com/">ES6 入门教程 </a></p><p><a href="http://www.webgl3d.cn/Three.js/">Three.js 教程 </a></p><p><a href="http://www.wjceo.com/blog/threejs/">threejs | 中文案例网</a></p><p><a href="https://interview2.poetries.top/">前端进阶之旅 </a></p><p><a href="https://typescript.bootcss.com/">TypeScript 中文手册 </a></p><h2 id=""><a href="#" class="headerlink" title=""></a></h2>]]></content>
-    
-    
-    <categories>
-      
-      <category>实用工具</category>
       
     </categories>
     
